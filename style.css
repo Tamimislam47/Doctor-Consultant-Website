@@ -1,0 +1,504 @@
+:root {
+  --primary-textSize: 2rem;
+  --primary-text-color: #3b4966;
+  --text-color: blue;
+  text-decoration: none;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.flexCenter {
+  display: flex;
+Easy Steps To Feel Better Rapidly
+You do not have to wait in line for hours or go to the hospital to take healthcare services. services
+Easily consult a doctor in just 10 minutes on your device at home or office.
+
+￼
+  justify-content: center;
+  align-items: center;
+}
+
+.flexAround {
+  display: flex;350px
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flexItemCenter {
+  display: flex;
+  align-items: center;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.ulInline {
+  display: flex;
+}
+
+.wFull {
+  width: 100%;
+}
+
+.hFull {
+  height: 100%;
+}
+
+.wScreen {
+  width: 100vw;
+}
+.hScreen {
+  width: 100vw;
+}
+
+.wHalf {
+  width: 50%;
+}
+
+.hHalf {
+  height: 50%;
+}
+
+button {
+  color: white;350px
+  background-color: blue;
+  padding: 15px;
+  font-size: calc(var(--primary-textSize) - 10px);
+  font-weight: bold;
+}
+
+.btn-wide {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  font-size: calc(var(--primary-textSize) + 4rem);
+}
+Easy Steps To Feel Better Rapidly
+You do not have to wait in line for hours or go to the hospital to take healthcare services. services
+Easily consult a doctor in just 10 minutes on your device at home or office.
+
+￼
+
+p {
+  font-size: calc(var(--primary-textSize));
+  color: var(--primary-text-color);
+}
+
+hr {
+  margin: 0;
+  padding: 0;350px
+}
+
+nav {
+  display: flex;
+  width: 90%;
+  font-size: var(--primary-textSize);
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main {
+  width: 90%;
+}
+
+.bgBanner {
+  width: 100vw;
+  text-align: center;
+  height: 70vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://doctime.com.bd/landing/home/bg_hero.webp");
+}350px
+
+.grid-container {
+  width: 65%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding: 16px;
+  position: absolute;
+  bottom: -15%;
+}
+
+.grid-item {
+  width: 90%;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 16px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.downloadSvg {
+  width: 30%;
+  gap: 15px;350px
+}
+
+/* Media query for tablets */
+.bgBanner {
+  width: 100vw; /* Full viewport width */
+  height: 70vh; /* 70% of the viewport height */
+  text-align: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensure the background image covers the entire area */
+  background-position: center; /* Center the background image */
+  background-image: url("https://doctime.com.bd/landing/home/bg_hero.webp");
+  display: flex; /* Use flexbox for centering content */
+  justify-content: center;
+  align-items: center;
+}
+
+.steps {
+  list-style: none;
+  margin: 0;350px
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.steps-vertical {
+  align-items: flex-start;
+}
+
+.step {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #6b7280;
+  position: relative;
+  counter-increment: step-counter;
+  font-size: 1.5rem;
+  list-style: none;
+}
+
+.step-primary {
+  border-color: #3b82f6;
+  background-color: #e0f2fe;
+  color: #1e3a8a;
+}
+350px
+.step:before {
+  content: counter(step-counter) ". ";
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  font-size: 1rem;
+  color: #3b82f6;
+  font-size: 1.5rem !important ;
+
+  width: 20px;
+}
+
+.whyUse {
+  width: 90%;
+}
+
+.context {
+  gap: 15px;
+  font-size: 2vw;
+}
+
+.whyUseContainer {
+  display: flex;
+  justify-self: start;
+  align-items: center;
+  width: 70%;
+}
+
+.whyUse {
+  position: relative;
+  width: 100vw;
+}
+
+.contextSide > p {
+  font-size: 6rem !important;
+}
+
+.step {
+  font-size: 2rem !important ;
+}
+
+.imgSide {
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 50vw;
+}
+
+/* fewTapscontainer */
+.fewTaps {
+  width: 90%;
+  margin-top: 200px;
+}
+.fewTapscontainer {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.tapDivs {
+  gap: 5px;
+}
+
+.tapDivs > i {
+  font-size: 4rem !important;
+}
+
+.tapDivs > p {
+  color: #4b8cf7;
+}
+
+.tapimg {
+  display: flex;
+  align-items: center;
+  align-items: center;
+}
+
+/* whenUse */
+
+.whenUse {
+  width: 90%;
+}
+
+.whenImgSide img {
+  max-width: 90vw;
+}
+
+.whenUse h2 {
+  font-size: 3rem;
+}
+
+/* easySteps */
+
+.easySteps {
+  width: 90%;
+}
+
+.stepsImg {
+  display: flex;
+  justify-content: center;
+ 
+}
+
+
+.easyStepsTexts {
+  gap: 20px;
+}
+
+.stepsImg {
+  width: 50%;
+}
+.upperImg {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  /* max-width: 100%; */
+  max-width: 100vw;
+}
+
+.upperImg img {
+  max-width: 100%;
+}
+
+.innerImg {
+  border-radius: 50px;
+  max-width: 350px;
+  height: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.iconDiv {
+  background-color: #009aff;
+  border-radius: 20%;
+}
+
+.easyListImgs {
+  gap: 50px;
+}
+
+.easyListImgs i {
+  font-size: 4rem;
+  padding: 50px;
+}
+
+@media (max-width: 1536px) {
+  html {
+    font-size: 13px;
+  }
+  .grid-container {
+    position: static;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .imgSide {
+    display: none;
+  }
+  .tapimg {
+    display: none;
+  }
+  .whenUse {
+    flex-direction: column;
+  }
+  .whenUse h1 {
+    font-size: 4rem !important;
+  }
+  .whenUse h2 {
+    font-size: 2rem !important;
+  }
+
+  .whenDivText {
+    width: 70%;
+  }
+
+  .whenDivText p {
+    font-size: 1.8rem;
+  }
+  .whenImgSide {
+    max-width: 100%;
+  }
+  .easyStepsContainer {
+    flex-direction: column;
+  }
+  .easyStepsTexts {
+    width: 100%;
+    gap: 50px;
+  }
+
+  .easy_stepsHeading h1 {
+    font-size: 4.5rem !important;
+  }
+  .easyStepsTexts h2 {
+    font-size: 2.5rem !important;
+  }
+
+  .easy_stepsHeading p {
+    font-size: 2rem;
+  }
+}
+
+/* Media query for tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+
+  .bgBanner {
+    height: 50vh; /* Reduce height for tablets */
+  }
+
+  .easy_stepsHeading h1 {
+    font-size: 3.5rem !important;
+  }
+  .easyStepsTexts h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .easy_stepsHeading p {
+    font-size: 2rem;
+  }
+}
+
+/* Media query for mobile devices (480px - 768px) */
+@media (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+  .bgBanner {
+    height: auto; /* Allow the height to adjust dynamically */
+    padding: 16px; /* Add padding for better spacing */
+    background-size: contain; /* Adjust background size for smaller screens */
+  }
+  .grid-container {
+    position: static;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  nav ul {
+    justify-content: space-between;
+  }
+
+  .listItem {
+    display: none;
+  }
+
+  button {
+    font-size: 2rem !important;
+  }
+
+  .spaceDiv {
+    height: 0vh !important;
+  }
+  .fewTapscontainer {
+    display: block;
+  }
+  .tapDivs {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 2px black solid;
+    padding: 5px;
+  }
+
+  /* .stepsImg {
+  width: 50%;
+  background-color: red;
+}
+.upperImg {
+  max-width: 100vw;
+  background-color: gray;
+}
+
+.upperImg img{
+  width: 100%;
+}
+
+.innerImg {
+  max-width: 350px;
+  height: 70%;
+  background-color: green;
+} */
+
+/* Media query for very small devices (less than 480px) */
+@media (max-width: 480px) {
+  html {
+    font-size: 8px;
+  }
+  h1 {
+    font-size: 4rem !important;
+  }
+  p {
+    font-size: 2rem !important;
+  }
+  .bgBanner {
+    height: auto;
+    padding: 8px; /* Reduce padding further */
+    background-size: contain; /* Keep the image contained for very small screens */
+  }
+  .grid-container {
+    width: 95%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
