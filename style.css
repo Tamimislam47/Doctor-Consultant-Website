@@ -15,18 +15,18 @@ body {
 
 .flexCenter {
   display: flex;
-Easy Steps To Feel Better Rapidly
-You do not have to wait in line for hours or go to the hospital to take healthcare services. services
-Easily consult a doctor in just 10 minutes on your device at home or office.
-
-￼
   justify-content: center;
   align-items: center;
 }
 
 .flexAround {
-  display: flex;350px
+  display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -68,7 +68,7 @@ Easily consult a doctor in just 10 minutes on your device at home or office.
 }
 
 button {
-  color: white;350px
+  color: white;
   background-color: blue;
   padding: 15px;
   font-size: calc(var(--primary-textSize) - 10px);
@@ -83,20 +83,10 @@ button {
 h1 {
   font-size: calc(var(--primary-textSize) + 4rem);
 }
-Easy Steps To Feel Better Rapidly
-You do not have to wait in line for hours or go to the hospital to take healthcare services. services
-Easily consult a doctor in just 10 minutes on your device at home or office.
-
-￼
-
-p {
-  font-size: calc(var(--primary-textSize));
-  color: var(--primary-text-color);
-}
 
 hr {
   margin: 0;
-  padding: 0;350px
+  padding: 0;
 }
 
 nav {
@@ -125,7 +115,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("https://doctime.com.bd/landing/home/bg_hero.webp");
-}350px
+}
 
 .grid-container {
   width: 65%;
@@ -148,7 +138,7 @@ main {
 
 .downloadSvg {
   width: 30%;
-  gap: 15px;350px
+  gap: 15px;
 }
 
 /* Media query for tablets */
@@ -168,7 +158,7 @@ main {
 
 .steps {
   list-style: none;
-  margin: 0;350px
+  margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -194,7 +184,7 @@ main {
   background-color: #e0f2fe;
   color: #1e3a8a;
 }
-350px
+
 .step:before {
   content: counter(step-counter) ". ";
   position: absolute;
@@ -268,6 +258,11 @@ main {
 
 .tapDivs > p {
   color: #4b8cf7;
+  font-size: 3rem;
+}
+
+.insideText > p {
+  font-size: 2.5rem;
 }
 
 .tapimg {
@@ -299,9 +294,7 @@ main {
 .stepsImg {
   display: flex;
   justify-content: center;
- 
 }
-
 
 .easyStepsTexts {
   gap: 20px;
@@ -345,6 +338,103 @@ main {
 .easyListImgs i {
   font-size: 4rem;
   padding: 50px;
+}
+
+.easy_stepsHeading h1 {
+  font-size: 4.5rem !important;
+}
+.easyStepsTexts h2 {
+  font-size: 3rem;
+}
+
+.easy_stepsHeading p,
+.easyListImgs p {
+  font-size: 2rem;
+}
+
+/* protextTionPlans */
+.protextTionPlans {
+  width: 90%;
+}
+
+.protextTionPlans h1 {
+  font-size: 4rem;
+}
+
+.plansCard {
+  width: 80%;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.header img {
+  width: 80px;
+  height: 80px;
+}
+
+.card {
+  font-size: 1.7rem;
+  padding: 15px;
+  border: gray 2px solid;
+  border-radius: 20px;
+  gap: 20px;
+}
+
+.lowerSideText {
+  gap: 12px;
+}
+
+.lowerRow {
+  gap: 20px;
+}
+
+.card button {
+  background-color: #136afb;
+  border-radius: 12px;
+}
+
+/* doctorsServices */
+.doctorsServices {
+  width: 90%;
+}
+
+.doctorsServices h2 {
+  font-size: 4rem;
+}
+
+.doctorsServices p {
+  font-size: 2rem;
+}
+
+.insideText {
+  width: 40%;
+}
+
+/* servicesCards */
+.servicesCards {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.textSide h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.textSide p {
+  font-size: 1.5rem;
+}
+
+.serviceOnecard img {
+  width: 80px;
+  height: 80px;
+  background-color: rosybrown;
+}
+
+.imgDiv{
+  height: 100%;
 }
 
 @media (max-width: 1536px) {
@@ -396,8 +486,22 @@ main {
     font-size: 2.5rem !important;
   }
 
-  .easy_stepsHeading p {
-    font-size: 2rem;
+  .easy_stepsHeading p,
+  .easyListImgs p {
+    font-size: 2.3rem;
+  }
+
+  .plansCard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .doctorsServices {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .insideText {
+    width: 70%;
   }
 }
 
@@ -480,6 +584,11 @@ main {
   height: 70%;
   background-color: green;
 } */
+
+  .plansCard {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 /* Media query for very small devices (less than 480px) */
 @media (max-width: 480px) {
