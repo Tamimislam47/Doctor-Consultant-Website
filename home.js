@@ -1,4 +1,5 @@
 import { Fetch } from "./Fetch.js";
+import specialtiesList from "./specislitiesList.js";
 
 // Function to create subscription cards
 function createCardsForSubscribes() {
@@ -69,69 +70,91 @@ function createPlanCard(plan) {
   document.getElementById("plansCard").appendChild(cardContainer);
 }
 
-// Function to fetch and render service cards
-function renderServiceCards() {
-  const url = "./services.json"; // Replace with your actual JSON file path
+function createServiceCard() {
+  const url = "./services.json  ";
 
   Fetch(url)
-    .then((services) => {
-      const servicesContainer = document.querySelector(".servicesCards"); // Main container
-
-      if (!servicesContainer) {
-        console.error("Services container not found.");
-        return;
-      }
-
-      // Loop through each service and create a card
-      services.forEach((service) => {
-        const card = createServiceCard(service);
-        servicesContainer.appendChild(card);
-      });
+    .then((data) => {
+      renderCreateServiceCard(data);
     })
-    .catch((error) => {
-      console.error("Error fetching services:", error);
-    });
+    .catch((error) =>
+      console.error("Error fetching subscription plans:", error)
+    );
 }
 
-// Function to create individual service card
-function createServiceCard(service) {
-  const card = document.createElement("div");
-  card.classList.add("serviceOnecard", "flexAround");
+function renderCreateServiceCard(cards) {
+  const servicesCards = document.getElementById("servicesCards");
 
-  // Image container
-  const imageContainer = document.createElement("div");
-  imageContainer.style.height = "100%";
+  if (!servicesCards) {
+    console.error("servicesCards container not found");
+    return;
+  }
 
-  const image = document.createElement("img");
-  image.src = service.image;
-  image.alt = service.title;
+  cards.forEach((item) => {
+    const { image, title, text } = item;
 
-  imageContainer.appendChild(image);
+    // Create elements for each service card
+    const serviceOnecard = document.createElement("div");
+    const imgDiv = document.createElement("div");
+    const textSide = document.createElement("div");
+    const img = document.createElement("img");
+    const h2 = document.createElement("h2");
+    const p = document.createElement("p");
 
-  // Text side
-  const textSide = document.createElement("div");
-  textSide.classList.add("textSide");
-  textSide.style.backgroundColor = "red";
+    // Set content and attributes
+    img.src = image;
+    img.alt = title;
+    h2.textContent = title;
+    p.textContent = text;
 
-  const title = document.createElement("h2");
-  title.innerText = service.title;
+    // Add classes for styling
+    serviceOnecard.classList.add("flexAround", "serviceOnecard");
+    imgDiv.classList.add("imgDiv");
+    textSide.classList.add("textSide");
 
-  const description = document.createElement("p");
-  description.innerText = service.text;
+    // Append elements in the correct hierarchy
+    imgDiv.appendChild(img);
+    serviceOnecard.appendChild(imgDiv);
+    textSide.appendChild(h2);
+    textSide.appendChild(p);
+    serviceOnecard.appendChild(textSide);
 
-  textSide.appendChild(title);
-  textSide.appendChild(description);
-
-  // Append image and text to card
-  card.appendChild(imageContainer);
-  card.appendChild(textSide);
-
-  return card;
+    // Append each card to the main container
+    servicesCards.appendChild(serviceOnecard);
+  });
 }
 
-// Call the function after DOM is loaded
-document.addEventListener("DOMContentLoaded", () => {
-  renderServiceCards();
-});
+function availableSpecialities() {
+  const specialitiesDiv = document.getElementById("specialities");
+
+  // Loop through the specialties list
+  specialtiesList.forEach((spcList) => {
+    const { text } = spcList;
+
+    // Create a new oneList container for each item
+    const oneList = document.createElement("div");
+    oneList.classList.add("oneList", "flexCenter");
+
+    // Create the h3 element with the text
+    const h3 = document.createElement("h3");
+    h3.textContent = text;
+
+    // Create the icon
+    const i = document.createElement("i");
+    i.classList.add("fa-solid", "fa-check", "iconColor");
+
+    // Append the icon and h3 to the oneList container
+    oneList.appendChild(i);
+    oneList.appendChild(h3);
+
+    // Append the oneList container to the main container
+    specialitiesDiv.appendChild(oneList);
+  });
+
+  // Add the "availableSpecialities" class to the specialitiesDiv
+  // specialitiesDiv.classList.add("availableSpecialities");
+}
 
 createCardsForSubscribes();
+createServiceCard();
+availableSpecialities();

@@ -1,17 +1,47 @@
 [
   {
-    "image": "https://doctime.com.bd/images/feature/instant__video__consultation.svg",
+    "image": "https://doctime.com.bd/images/feature/verified__doctors.svg",
     "title": "verified doctors",
     "text": "Every doctors on DocTime platform are BMDC certified. We verify relevant information before the doctor can consult any patient."
   },
   {
     "image": "https://doctime.com.bd/images/feature/instant__video__consultation.svg",
-    "title": "verified doctors",
-    "text": "Every doctors on DocTime platform are BMDC certified. We verify relevant information before the doctor can consult any patient."
+    "title": "Instant video consultation",
+    "text": "Most of our consultations start within 10 minutes of making a payment. The video call is secured with 256-bit encryption."
   },
   {
-    "image": "https://doctime.com.bd/images/feature/instant__video__consultation.svg",
-    "title": "verified doctors",
-    "text": "Every doctors on DocTime platform are BMDC certified. We verify relevant information before the doctor can consult any patient."
+    "image": "https://doctime.com.bd/images/feature/Instant_electronics_prescription.svg",
+    "title": "Instant electronics prescription",
+    "text": "As soon as the consultation is complete, the doctor will provide an electronic prescription for the patient to download either instantly or later."
   },
+  {
+    "image": "https://doctime.com.bd/images/feature/easy__payment.svg",
+    "title": "Easy payment options",
+    "text": "The patient can make a payment online using our secure payment gateway, with options including bKash, Rocket, Nagad, debit cards, credit cards, and more."
+  },
+  {
+    "image": "https://doctime.com.bd/images/feature/better__consultation__quality.svg",
+    "title": "Better consultation quality",
+    "text": "Our doctors are committed to providing the best service by spending the necessary time for each consultation. We continuously improve our service based on ratings and feedback provided by patients."
+  },
+  {
+    "image": "https://doctime.com.bd/images/feature/health__history.svg",
+    "title": "Health histroy ",
+    "text": "The patient can access their consultation history and previous prescriptions digitally with just a few taps."
+  },
+  {
+    "image": "https://doctime.com.bd/images/feature/super__fast__support.svg",
+    "title": "Super fast support",
+    "text": "Our dedicated customer service team is available to assist you in resolving any issues or answering any queries. We are happy to help."
+  },
+  {
+    "image": "https://doctime.com.bd/images/feature/medicine__delivered.svg",
+    "title": "Medicine delivered to your doorstep",
+    "text": "Our dedicated customer service team is available to assist you in resolving any issues or answering any queries. We are happy to help."
+  },
+  {
+    "image": "https://doctime.com.bd/images/feature/mobile__reminder.svg",
+    "title": "Medicine reminder",
+    "text": "We work closely with our partners to deliver medicine to your doorstep."
+  }
 ]
