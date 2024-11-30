@@ -83,6 +83,9 @@ button {
 h1 {
   font-size: clamp(25px, 3vw + 1rem, 5vw) !important;
 }
+p {
+  font-size: clamp(15px, 1vw, 2vw) !important;
+}
 
 hr {
   margin: 0;
@@ -475,11 +478,10 @@ main {
 }
 
 .availableSpecialities {
-  width: 80%;
-  display: grid; /* Add display grid */
+  width: 50%;
+  display: grid;
   grid-template-columns: repeat(4, minmax(200px, 1fr));
-  gap: 20px;
-  justify-items: center;
+  justify-items: start;
   align-items: center;
 }
 
@@ -660,11 +662,11 @@ main {
 
 .leftSideParallax {
   /* font-size: 30px; */
-  font-size: clamp(15px, 1vw, 40px);
+  font-size: clamp(30px, 3vw, 40px);
 }
 .leftSideParallax p {
   /* font-size: 30px; */
-  font-size: clamp(10px, 0.8vw, 35px);
+  font-size: clamp(25px, 2vw, 35px);
 }
 
 .rightSideParallax {
@@ -673,12 +675,19 @@ main {
 }
 
 .scanDiv {
-  width: 300px;
+  width: 200px;
 }
 
 .storeSide {
-  width: 250px;
+  width: 200px;
 }
+
+/* question */
+.question {
+  width: 90%;
+}
+
+/* media */
 
 @media (max-width: 1536px) {
   html {
@@ -784,18 +793,6 @@ main {
     height: auto;
     gap: 2rem;
   }
-  .paraContainer {
-    flex-direction: column;
-  }
-
-  .rightSideParallax {
-    flex-direction: column;
-  }
-
-  .scanDiv,
-  .storeSide {
-    width: clamp(200px, 3vw, 300px);
-  }
 }
 /* Media query for tablets (768px - 1024px) */
 @media (max-width: 1024px) {
@@ -819,6 +816,16 @@ main {
   }
   .servicesCards {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .paraContainer {
+    flex-direction: column;
+  }
+  .rightSideParallax {
+    flex-direction: column;
+  }
+  .scanDiv,
+  .storeSide {
+    width: clamp(100px, 3vw + 1rem, 300px);
   }
 }
 
