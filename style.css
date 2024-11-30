@@ -511,6 +511,15 @@ main {
   width: fit-content;
 }
 
+.cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cell h3 {
+  text-align: start;
+}
+
 .iconColor {
   color: #34c300;
 }
@@ -918,12 +927,8 @@ main {
     width: 100%;
   }
   .cell {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-self: start;
-    max-width: 50%;
     width: 50%;
+    max-width: 50%;
   }
 }
 
