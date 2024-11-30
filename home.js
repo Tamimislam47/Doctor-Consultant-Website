@@ -133,6 +133,7 @@ function availableSpecialities() {
 
     // Create a new oneList container for each item
     const oneList = document.createElement("div");
+    const cell = document.createElement("div");
     oneList.classList.add("oneList", "flexCenter");
 
     // Create the h3 element with the text
@@ -142,10 +143,13 @@ function availableSpecialities() {
     // Create the icon
     const i = document.createElement("i");
     i.classList.add("fa-solid", "fa-check", "iconColor");
+    cell.classList.add("cell");
+
+    cell.appendChild(i);
+    cell.appendChild(h3);
 
     // Append the icon and h3 to the oneList container
-    oneList.appendChild(i);
-    oneList.appendChild(h3);
+    oneList.appendChild(cell);
 
     // Append the oneList container to the main container
     specialitiesDiv.appendChild(oneList);
